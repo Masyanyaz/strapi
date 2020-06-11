@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "types",
+  "info": {
+    "name": "Types"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "path": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "tours": {
+      "via": "types",
+      "collection": "tours"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tours",
+  "info": {
+    "name": "Tours"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "path": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "category": {
+      "model": "categories",
+      "via": "tours"
+    },
+    "direction": {
+      "model": "directions",
+      "via": "tours"
+    },
+    "types": {
+      "collection": "types",
+      "via": "tours",
+      "dominant": true
+    },
+    "preview_image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "preview_text": {
+      "type": "richtext"
+    }
+  }
+}
