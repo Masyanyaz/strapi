@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_meta_metas",
+  "info": {
+    "name": "meta",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "h1": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

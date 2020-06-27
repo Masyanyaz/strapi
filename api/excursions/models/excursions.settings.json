@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "excursions",
+  "info": {
+    "name": "Excursions"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string",
+      "unique": true
+    },
+    "direction": {
+      "model": "directions",
+      "via": "excursions"
+    }
+  }
+}

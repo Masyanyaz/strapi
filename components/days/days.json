@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_days_days",
+  "info": {
+    "name": "days",
+    "icon": "plane-arrival"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

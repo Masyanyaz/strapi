@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "directions",
+  "collectionName": "seasons",
   "info": {
-    "name": "Directions"
+    "name": "Seasons"
   },
   "options": {
     "increments": true,
@@ -19,12 +19,8 @@
       "required": true
     },
     "tours": {
-      "via": "direction",
+      "via": "season",
       "collection": "tours"
-    },
-    "excursions": {
-      "via": "direction",
-      "collection": "excursions"
     }
   }
 }

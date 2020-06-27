@@ -32,18 +32,33 @@
       "dominant": true
     },
     "preview_image": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
-        "files",
-        "images",
-        "videos"
+        "images"
       ],
       "plugin": "upload",
       "required": false
     },
     "preview_text": {
       "type": "richtext"
+    },
+    "day_count": {
+      "type": "integer"
+    },
+    "days": {
+      "type": "component",
+      "repeatable": true,
+      "component": "days.days"
+    },
+    "season": {
+      "model": "seasons",
+      "via": "tours"
+    },
+    "prices": {
+      "type": "component",
+      "repeatable": true,
+      "component": "prices.prices"
     }
   }
 }

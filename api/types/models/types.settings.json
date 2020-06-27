@@ -21,6 +21,15 @@
     "tours": {
       "via": "types",
       "collection": "tours"
+    },
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
     }
   }
 }

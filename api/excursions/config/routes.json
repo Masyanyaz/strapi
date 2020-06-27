@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/excursions",
+      "handler": "excursions.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/excursions/count",
+      "handler": "excursions.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/excursions/:id",
+      "handler": "excursions.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/excursions",
+      "handler": "excursions.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/excursions/:id",
+      "handler": "excursions.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/excursions/:id",
+      "handler": "excursions.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
