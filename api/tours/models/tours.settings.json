@@ -14,8 +14,8 @@
       "required": true
     },
     "path": {
-      "type": "string",
-      "unique": true,
+      "type": "uid",
+      "targetField": "name",
       "required": true
     },
     "category": {
@@ -42,9 +42,6 @@
     },
     "preview_text": {
       "type": "richtext"
-    },
-    "day_count": {
-      "type": "integer"
     },
     "days": {
       "type": "component",

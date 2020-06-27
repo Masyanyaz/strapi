@@ -13,8 +13,9 @@
       "type": "string"
     },
     "path": {
-      "type": "string",
-      "unique": true
+      "type": "uid",
+      "targetField": "name",
+      "required": true
     },
     "direction": {
       "model": "directions",

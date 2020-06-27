@@ -14,8 +14,8 @@
       "required": true
     },
     "path": {
-      "type": "string",
-      "unique": true,
+      "type": "uid",
+      "targetField": "name",
       "required": true
     },
     "tours": {
