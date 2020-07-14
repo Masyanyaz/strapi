@@ -7,18 +7,15 @@
   "options": {},
   "attributes": {
     "count": {
-      "type": "integer"
+      "type": "integer",
+      "required": true,
+      "unique": false
     },
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "hotel",
-        "appartament",
-        "habitant"
-      ]
-    },
-    "value": {
-      "type": "integer"
+    "types": {
+      "type": "component",
+      "repeatable": true,
+      "component": "prices.type",
+      "required": true
     }
   }
 }

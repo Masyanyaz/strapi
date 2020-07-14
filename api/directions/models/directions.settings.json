@@ -25,6 +25,11 @@
     "excursions": {
       "via": "direction",
       "collection": "excursions"
+    },
+    "towns": {
+      "collection": "towns",
+      "via": "directions",
+      "dominant": true
     }
   }
 }

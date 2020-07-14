@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "seasons",
+  "collectionName": "towns",
   "info": {
-    "name": "Seasons"
+    "name": "Towns"
   },
   "options": {
     "increments": true,
@@ -13,14 +13,14 @@
       "type": "string",
       "required": true
     },
-    "path": {
-      "type": "uid",
-      "targetField": "name",
-      "required": true
-    },
     "tours": {
-      "via": "seasons",
-      "collection": "tours"
+      "via": "towns",
+      "collection": "tours",
+      "dominant": true
+    },
+    "directions": {
+      "via": "towns",
+      "collection": "directions"
     }
   }
 }

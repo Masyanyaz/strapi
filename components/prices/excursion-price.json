@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_prices_excursion_prices",
+  "info": {
+    "name": "excursion_price",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "count": {
+      "type": "integer"
+    },
+    "value": {
+      "type": "integer"
+    }
+  }
+}

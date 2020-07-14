@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_prices_types",
+  "info": {
+    "name": "type",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "integer",
+      "required": true
+    },
+    "name": {
+      "type": "enumeration",
+      "enum": [
+        "hotel",
+        "appartament",
+        "habitant"
+      ],
+      "required": true
+    }
+  }
+}

@@ -20,6 +20,18 @@
     "direction": {
       "model": "directions",
       "via": "excursions"
+    },
+    "transports": {
+      "collection": "transport",
+      "via": "excursions"
+    },
+    "hours": {
+      "type": "decimal"
+    },
+    "prices": {
+      "type": "component",
+      "repeatable": true,
+      "component": "prices.excursion-price"
     }
   }
 }

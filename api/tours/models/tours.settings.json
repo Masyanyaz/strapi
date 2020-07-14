@@ -48,14 +48,37 @@
       "repeatable": true,
       "component": "days.days"
     },
-    "season": {
-      "model": "seasons",
-      "via": "tours"
+    "seasons": {
+      "collection": "seasons",
+      "via": "tours",
+      "dominant": true
     },
     "prices": {
       "type": "component",
       "repeatable": true,
       "component": "prices.prices"
+    },
+    "towns": {
+      "collection": "towns",
+      "via": "tours"
+    },
+    "groupCount": {
+      "type": "enumeration",
+      "enum": [
+        "individual",
+        "group"
+      ]
+    },
+    "priceType": {
+      "type": "enumeration",
+      "enum": [
+        "standart",
+        "lux",
+        "lite"
+      ]
+    },
+    "best_tours": {
+      "collection": "tours"
     }
   }
 }

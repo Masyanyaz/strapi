@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transports",
+  "info": {
+    "name": "Transport"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "excursions": {
+      "via": "transports",
+      "collection": "excursions",
+      "dominant": true
+    }
+  }
+}
