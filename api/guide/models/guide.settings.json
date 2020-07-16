@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "guides",
+  "info": {
+    "name": "Guide"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "path": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "tours": {
+      "via": "guide",
+      "collection": "tours"
+    }
+  }
+}

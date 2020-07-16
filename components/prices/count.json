@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_prices_counts",
+  "info": {
+    "name": "count",
+    "icon": "adjust"
+  },
+  "options": {},
+  "attributes": {
+    "count": {
+      "type": "integer"
+    },
+    "value": {
+      "type": "integer"
+    }
+  }
+}

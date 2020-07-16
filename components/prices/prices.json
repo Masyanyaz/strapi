@@ -2,20 +2,23 @@
   "collectionName": "components_prices_prices",
   "info": {
     "name": "prices",
-    "icon": "money-bill-alt"
+    "icon": "blog"
   },
   "options": {},
   "attributes": {
-    "count": {
-      "type": "integer",
-      "required": true,
-      "unique": false
+    "name": {
+      "type": "enumeration",
+      "enum": [
+        "hotel",
+        "appartament",
+        "habitant"
+      ],
+      "required": true
     },
-    "types": {
+    "count": {
       "type": "component",
       "repeatable": true,
-      "component": "prices.type",
-      "required": true
+      "component": "prices.count"
     }
   }
 }

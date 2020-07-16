@@ -13,14 +13,18 @@
       "type": "string",
       "required": true
     },
-    "path": {
-      "type": "uid",
-      "targetField": "name",
-      "required": true
-    },
     "tours": {
       "via": "seasons",
       "collection": "tours"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

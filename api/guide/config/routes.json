@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/types",
-      "handler": "types.find",
+      "path": "/guides",
+      "handler": "guide.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/types/count",
-      "handler": "types.count",
+      "path": "/guides/count",
+      "handler": "guide.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/types/:id",
-      "handler": "types.findOne",
+      "path": "/guides/:id",
+      "handler": "guide.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/types",
-      "handler": "types.create",
+      "path": "/guides",
+      "handler": "guide.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/types/:id",
-      "handler": "types.update",
+      "path": "/guides/:id",
+      "handler": "guide.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/types/:id",
-      "handler": "types.delete",
+      "path": "/guides/:id",
+      "handler": "guide.delete",
       "config": {
         "policies": []
       }

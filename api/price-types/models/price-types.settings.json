@@ -1,16 +1,16 @@
 {
-  "collectionName": "components_days_days",
+  "kind": "collectionType",
+  "collectionName": "price_types",
   "info": {
-    "name": "days",
-    "icon": "plane-arrival"
+    "name": "PriceTypes"
   },
-  "options": {},
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
   "attributes": {
     "name": {
       "type": "string"
-    },
-    "text": {
-      "type": "richtext"
     },
     "image": {
       "model": "file",
@@ -20,6 +20,10 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "tours": {
+      "via": "price_type",
+      "collection": "tours"
     }
   }
 }

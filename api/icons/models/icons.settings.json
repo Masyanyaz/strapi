@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "transports",
+  "collectionName": "icons",
   "info": {
-    "name": "Transport"
+    "name": "icons"
   },
   "options": {
     "increments": true,
@@ -21,9 +21,13 @@
       "plugin": "upload",
       "required": false
     },
-    "excursions": {
-      "collection": "excursions",
-      "via": "transports",
+    "categories": {
+      "collection": "categories",
+      "via": "icon"
+    },
+    "tours": {
+      "via": "icons",
+      "collection": "tours",
       "dominant": true
     }
   }

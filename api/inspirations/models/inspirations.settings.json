@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "inspirations",
   "info": {
-    "name": "Categories"
+    "name": "Inspirations"
   },
   "options": {
     "increments": true,
@@ -10,22 +10,19 @@
   },
   "attributes": {
     "name": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "path": {
       "type": "uid",
-      "targetField": "name",
-      "required": true
+      "targetField": "name"
+    },
+    "text": {
+      "type": "richtext"
     },
     "tours": {
-      "via": "categories",
+      "via": "inspirations",
       "collection": "tours",
       "dominant": true
-    },
-    "icon": {
-      "via": "categories",
-      "model": "icons"
     }
   }
 }

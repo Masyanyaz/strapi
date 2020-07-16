@@ -22,8 +22,8 @@
       "via": "excursions"
     },
     "transports": {
-      "collection": "transport",
-      "via": "excursions"
+      "via": "excursions",
+      "collection": "transport"
     },
     "hours": {
       "type": "decimal"
