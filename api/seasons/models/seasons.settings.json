@@ -14,8 +14,8 @@
       "required": true
     },
     "tours": {
-      "via": "seasons",
-      "collection": "tours"
+      "collection": "tours",
+      "via": "season"
     },
     "image": {
       "model": "file",

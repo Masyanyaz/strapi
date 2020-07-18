@@ -18,8 +18,8 @@
       "required": true
     },
     "direction": {
-      "model": "directions",
-      "via": "excursions"
+      "via": "excursions",
+      "model": "directions"
     },
     "transports": {
       "via": "excursions",

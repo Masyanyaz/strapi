@@ -19,13 +19,13 @@
       "required": true
     },
     "tours": {
-      "via": "categories",
       "collection": "tours",
+      "via": "categories",
       "dominant": true
     },
     "icon": {
-      "via": "categories",
-      "model": "icons"
+      "model": "icons",
+      "via": "category"
     }
   }
 }

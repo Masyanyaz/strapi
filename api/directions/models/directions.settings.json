@@ -19,12 +19,12 @@
       "required": true
     },
     "tours": {
-      "via": "direction",
-      "collection": "tours"
+      "collection": "tours",
+      "via": "direction"
     },
     "excursions": {
-      "via": "direction",
-      "collection": "excursions"
+      "collection": "excursions",
+      "via": "direction"
     },
     "towns": {
       "collection": "towns",
