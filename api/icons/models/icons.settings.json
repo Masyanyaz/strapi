@@ -25,10 +25,6 @@
       "via": "icons",
       "collection": "tours",
       "dominant": true
-    },
-    "category": {
-      "via": "icon",
-      "model": "categories"
     }
   }
 }

@@ -22,8 +22,8 @@
       "required": false
     },
     "tours": {
-      "collection": "tours",
-      "via": "priceType"
+      "via": "priceType",
+      "collection": "tours"
     },
     "rus": {
       "type": "string",

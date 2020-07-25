@@ -50,8 +50,8 @@
       "collection": "tours"
     },
     "categories": {
-      "via": "tours",
-      "collection": "categories"
+      "collection": "categories",
+      "via": "tours"
     },
     "guide": {
       "model": "guide",
@@ -71,16 +71,22 @@
       "component": "prices.prices"
     },
     "priceType": {
-      "via": "tours",
-      "model": "price-types"
+      "model": "price-types",
+      "via": "tours"
     },
     "season": {
-      "via": "tours",
-      "model": "seasons"
+      "model": "seasons",
+      "via": "tours"
     },
-    "direction": {
-      "via": "tours",
-      "model": "directions"
+    "directions": {
+      "collection": "directions",
+      "via": "tours"
+    },
+    "include": {
+      "type": "text"
+    },
+    "noinclude": {
+      "type": "text"
     }
   }
 }

@@ -19,8 +19,9 @@
       "required": true
     },
     "tours": {
+      "via": "directions",
       "collection": "tours",
-      "via": "direction"
+      "dominant": true
     },
     "excursions": {
       "collection": "excursions",
