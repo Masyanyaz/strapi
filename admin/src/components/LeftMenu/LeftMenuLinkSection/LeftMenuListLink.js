@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const LeftMenuListLink = styled.div`
-  max-height: 450px;
+  max-height: 600px;
   margin-bottom: 19px;
   margin-right: 28px;
   overflow: auto;
